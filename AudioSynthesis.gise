@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="AudioSynthesis.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="AudioTop.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="AudioTop.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="AudioTop.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="AudioTop.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="AudioTop.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="AudioTop.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="AudioTop.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="AudioTop.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="AudioTop.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="AudioTop.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AudioTop.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="AudioTop.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="AudioTop.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="AudioTop.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="AudioTop.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="AudioTop.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="AudioTop.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="AudioTop.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="AudioTop.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="AudioTop.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="AudioTop_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="AudioTop_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AudioTop_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AudioTop_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="AudioTop_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="AudioTop_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AudioTop_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AudioTop_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="AudioTop_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="AudioTop_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AudioTop_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="AudioTop_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="AudioTop_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="AudioTop_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AudioTop_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AudioTop_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Clk25MHz.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Clk25MHz.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Clk25MHz.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DebouncePB.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DebouncePB.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="DebouncePB.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DigitalControlledAmp.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DigitalControlledAmp.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="DigitalControlledAmp.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DisplayController.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DisplayController.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="DisplayController.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PS2Controller.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PS2Controller.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PS2Controller.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PWM16Bits.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PWM16Bits.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PWM16Bits.xst"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="audiotop.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="audiotop.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="audiotop.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1398745752" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1398745752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1398745752" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8548349335809337802" xil_pn:start_ts="1398745752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1398745752" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="230634686043629776" xil_pn:start_ts="1398745752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1398745752" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1398745752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1398745752" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1445942928054503176" xil_pn:start_ts="1398745752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1398745752" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1398745752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1398745752" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8727267971560296282" xil_pn:start_ts="1398745752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1398748493" xil_pn:in_ck="-4299635586734856468" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5988329342075946195" xil_pn:start_ts="1398748471">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="AudioTop.lso"/>
+      <outfile xil_pn:name="AudioTop.ngc"/>
+      <outfile xil_pn:name="AudioTop.ngr"/>
+      <outfile xil_pn:name="AudioTop.prj"/>
+      <outfile xil_pn:name="AudioTop.stx"/>
+      <outfile xil_pn:name="AudioTop.syr"/>
+      <outfile xil_pn:name="AudioTop.xst"/>
+      <outfile xil_pn:name="AudioTop_vhdl.prj"/>
+      <outfile xil_pn:name="AudioTop_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1398748713" xil_pn:in_ck="5770411643501261416" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7852648716101673411" xil_pn:start_ts="1398748713">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1398748727" xil_pn:in_ck="1786026253783978803" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6218194638918776829" xil_pn:start_ts="1398748713">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AudioTop.bld"/>
+      <outfile xil_pn:name="AudioTop.ngd"/>
+      <outfile xil_pn:name="AudioTop_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1398748738" xil_pn:in_ck="1786026253783978804" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1398748727">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AudioTop.pcf"/>
+      <outfile xil_pn:name="AudioTop_map.map"/>
+      <outfile xil_pn:name="AudioTop_map.mrp"/>
+      <outfile xil_pn:name="AudioTop_map.ncd"/>
+      <outfile xil_pn:name="AudioTop_map.ngm"/>
+      <outfile xil_pn:name="AudioTop_map.xrpt"/>
+      <outfile xil_pn:name="AudioTop_summary.xml"/>
+      <outfile xil_pn:name="AudioTop_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1398748782" xil_pn:in_ck="-6007115641415001011" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1398748738">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AudioTop.ncd"/>
+      <outfile xil_pn:name="AudioTop.pad"/>
+      <outfile xil_pn:name="AudioTop.par"/>
+      <outfile xil_pn:name="AudioTop.ptwx"/>
+      <outfile xil_pn:name="AudioTop.unroutes"/>
+      <outfile xil_pn:name="AudioTop.xpi"/>
+      <outfile xil_pn:name="AudioTop_pad.csv"/>
+      <outfile xil_pn:name="AudioTop_pad.txt"/>
+      <outfile xil_pn:name="AudioTop_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1398748804" xil_pn:in_ck="3469225329622402120" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1398748782">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AudioTop.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="audiotop.bgn"/>
+      <outfile xil_pn:name="audiotop.bit"/>
+      <outfile xil_pn:name="audiotop.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1398748812" xil_pn:in_ck="5086572779388622418" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1398748804">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1398748782" xil_pn:in_ck="1786026253783978672" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1398748773">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AudioTop.twr"/>
+      <outfile xil_pn:name="AudioTop.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/BlackHat/Documents/FPGAS/Archivos VHDL/AudioSynthesis/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/BlackHat/Documents/FPGAS/Archivos VHDL/AudioSynthesis/xst"
+elaborate
+-ifn PS2Controller.prj
+-ifmt mixed

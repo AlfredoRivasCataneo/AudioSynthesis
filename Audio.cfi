@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.28xd
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.28xd
+DATE            04/28/2014 - 23:04
+SOURCE          C:\Users\BlackHat\Documents\FPGAS\Archivos VHDL\AudioSynthesis\Audio.mcs
+DEVICE          XCF04S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x03A87155
+START_ADDRESS   0x00000000 END_ADDRESS 0x0004547F DIRECTION_UP   "C:/Users/BlackHat/Documents/FPGAS/Archivos VHDL/AudioSynthesis/audiotop.bit" 3s500efg320
