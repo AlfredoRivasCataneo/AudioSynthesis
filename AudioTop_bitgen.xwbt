@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\BlackHat\Documents\FPGAS\Archivos VHDL\AudioSynthesis\AudioTop.ncd
-OUTFILE=C:\Users\BlackHat\Documents\FPGAS\Archivos VHDL\AudioSynthesis\AudioTop.bit
-FAMILY=Spartan3E
-PART=xc3s500e-4fg320
-WORKINGDIR=C:\Users\BlackHat\Documents\FPGAS\Archivos VHDL\AudioSynthesis
-LICENSE=WebPack
-USER_INFO=__0_0_0

@@ -1,5 +1,0 @@
-vhdl work "PS2Controller.vhd"
-vhdl work "DisplayController.vhd"
-vhdl work "DebouncePB.vhd"
-vhdl work "Clk25MHz.vhd"
-vhdl work "AudioTop.vhd"
