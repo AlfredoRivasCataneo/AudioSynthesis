@@ -6,7 +6,7 @@ y=10*sin(t);
 %plot(t,y);
 theta=0:0.1:2*pi;
 seno=int32(sin(theta)*10000000/32768);
-
+muestras = 360;
 
 
 s = fopen('SineWave.vhd','w+'); %opens the output file 
@@ -22,12 +22,12 @@ fprintf(s,'end sinewave;\n');
 fprintf(s,'architecture Behavioral of SineWave is\n');
  fprintf(s,'\n');
  fprintf(s,'\n');
-for i=0:360
+for i=0:muestras
  x=uint8(sind(i)*128+128);   
  plot(i,x,'r');
  hold on;
 numero=dec2hex(x,2);
-fprintf(s,'constant dato');
+fprintf(s,'constant D');
 fprintf(s,'%d',i);
 fprintf(s,': std_logic_vector(15 downto 0) := ');
 fprintf(s,'x');
@@ -38,7 +38,7 @@ fprintf(s,'\n');
 end
 fprintf(s,'type rom_array is array (NATURAL range <>) of STD_LOGIC_VECTOR(15 downto 0);\n');
 fprintf(s,'constant rom: rom_array := (');
-for i=0:360
+for i=0:muestras
     fprintf(s,'%s','D');
     fprintf(s,'%d',i);
     fprintf(s,',');
@@ -87,12 +87,12 @@ s2 = fopen('SawToothWave.vhd','w+'); %opens the output file
         fprintf(s2,'architecture Behavioral of SawToothWave is\n');
         fprintf(s2,'\n');
         fprintf(s2,'\n');
-for i=0:360
-    if i<181
+for i=0:muestras
+    if i<muestras/2
         numero=dec2hex(round(1.41*i),2);
         plot(i,1.41*i,'g');
         hold on;
-        fprintf(s2,'constant dato');
+        fprintf(s2,'constant D');
         fprintf(s2,'%d',i);
         fprintf(s2,': std_logic_vector(15 downto 0) := ');
         fprintf(s2,'x');
@@ -104,7 +104,7 @@ for i=0:360
         numero=dec2hex(round(1.41*i-255),2);
         plot(i,1.41*i-255,'g');
         hold on;
-        fprintf(s2,'constant dato');
+        fprintf(s2,'constant D');
         fprintf(s2,'%d',i);
         fprintf(s2,': std_logic_vector(15 downto 0) := ');
         fprintf(s2,'x');
@@ -116,7 +116,7 @@ for i=0:360
 end
 fprintf(s2,'type rom_array is array (NATURAL range <>) of STD_LOGIC_VECTOR(15 downto 0);\n');
 fprintf(s2,'constant rom: rom_array := (');
-for i=0:360
+for i=0:muestras
     fprintf(s2,'%s','D');
     fprintf(s2,'%d',i);
     fprintf(s2,',');
@@ -168,12 +168,12 @@ fprintf(s3,'end TriangleWave;\n');
 fprintf(s3,'architecture Behavioral of TriangleWave is\n');
  fprintf(s3,'\n');
  fprintf(s3,'\n');
-for i=0:360
-    if i<91
+for i=0:muestras
+    if i < muestras/4
         numero=dec2hex(128+round(1.41*i),2);
         plot(i,128+round(1.41*i));
         hold on;
-        fprintf(s2,'constant dato');
+        fprintf(s2,'constant D');
         fprintf(s2,'%d',i);
         fprintf(s2,': std_logic_vector(15 downto 0) := ');
         fprintf(s2,'x');
@@ -181,11 +181,11 @@ for i=0:360
         fprintf(s2,'%s',numero);
         fprintf(s2,'";');
         fprintf(s2,'\n');
-    elseif i<271
+    elseif i < 3*muestras/4
         numero=dec2hex(383-round(1.41*i),2);
         plot(i,383-round(1.41*i));
         hold on;
-        fprintf(s2,'constant dato');
+        fprintf(s2,'constant D');
         fprintf(s2,'%d',i);
         fprintf(s2,': std_logic_vector(15 downto 0) := ');
         fprintf(s2,'x');
@@ -197,7 +197,7 @@ for i=0:360
         numero=dec2hex(round(1.41*i)-380,2);
         plot(i,round(1.41*i)-380);
         hold on;
-        fprintf(s2,'constant dato');
+        fprintf(s2,'constant D');
         fprintf(s2,'%d',i);
         fprintf(s2,': std_logic_vector(15 downto 0) := ');
         fprintf(s2,'x');
@@ -209,10 +209,14 @@ for i=0:360
 end
 fprintf(s3,'type rom_array is array (NATURAL range <>) of STD_LOGIC_VECTOR(15 downto 0);\n');
 fprintf(s3,'constant rom: rom_array := (');
-for i=0:360
+for i=0:muestras
     fprintf(s3,'%s','D');
     fprintf(s3,'%d',i);
-    fprintf(s3,',');
+    if i<muestras
+        fprintf(s3,',');
+    else
+        fprintf(s3);
+    end
     if((i==32)||(i==32*2)||(i==32*3)||(i==32*4)||(i==32*4)||(i==32*5)||(i==32*6)||(i==32*7)||(i==32*8)||(i==32*9)||(i==32*10)||(i==32*11)||(i==32*12)) 
     fprintf(s3,'\n');    
     end    

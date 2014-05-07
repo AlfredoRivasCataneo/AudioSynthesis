@@ -24,10 +24,10 @@ fprintf(s,'architecture Behavioral of SineWave is\n');
  fprintf(s,'\n');
 for i=0:360
  x=uint8(sind(i)*128+128);   
- plot(i,x);
+ plot(i,x,'r');
  hold on;
 numero=dec2hex(x,2);
-fprintf(s,'constant dato');
+fprintf(s,'constant D');
 fprintf(s,'%d',i);
 fprintf(s,': std_logic_vector(15 downto 0) := ');
 fprintf(s,'x');
@@ -90,9 +90,9 @@ s2 = fopen('SawToothWave.vhd','w+'); %opens the output file
 for i=0:360
     if i<181
         numero=dec2hex(round(1.41*i),2);
-        plot(i,1.41*i);
+        plot(i,1.41*i,'g');
         hold on;
-        fprintf(s2,'constant dato');
+        fprintf(s2,'constant D');
         fprintf(s2,'%d',i);
         fprintf(s2,': std_logic_vector(15 downto 0) := ');
         fprintf(s2,'x');
@@ -102,9 +102,9 @@ for i=0:360
         fprintf(s2,'\n');
     else
         numero=dec2hex(round(1.41*i-255),2);
-        plot(i,1.41*i-255);
+        plot(i,1.41*i-255,'g');
         hold on;
-        fprintf(s2,'constant dato');
+        fprintf(s2,'constant D');
         fprintf(s2,'%d',i);
         fprintf(s2,': std_logic_vector(15 downto 0) := ');
         fprintf(s2,'x');
@@ -170,8 +170,8 @@ fprintf(s3,'architecture Behavioral of TriangleWave is\n');
  fprintf(s3,'\n');
 for i=0:360
     if i<91
-        numero=dec2hex(128+i,2);
-        plot(i,128+i);
+        numero=dec2hex(128+round(1.41*i),2);
+        plot(i,128+round(1.41*i));
         hold on;
         fprintf(s2,'constant dato');
         fprintf(s2,'%d',i);
@@ -182,10 +182,10 @@ for i=0:360
         fprintf(s2,'";');
         fprintf(s2,'\n');
     elseif i<271
-        numero=dec2hex(255-i,2);
-        plot(i,1.41*180-i);
+        numero=dec2hex(383-round(1.41*i),2);
+        plot(i,383-round(1.41*i));
         hold on;
-        fprintf(s2,'constant dato');
+        fprintf(s2,'constant D');
         fprintf(s2,'%d',i);
         fprintf(s2,': std_logic_vector(15 downto 0) := ');
         fprintf(s2,'x');
@@ -194,8 +194,8 @@ for i=0:360
         fprintf(s2,'";');
         fprintf(s2,'\n');
     else
-        numero=dec2hex(round(1.41*180-i),2);
-        plot(i,1.41*180-i);
+        numero=dec2hex(round(1.41*i)-380,2);
+        plot(i,round(1.41*i)-380);
         hold on;
         fprintf(s2,'constant dato');
         fprintf(s2,'%d',i);
