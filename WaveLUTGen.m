@@ -39,9 +39,10 @@ end
 fprintf(s,'type rom_array is array (NATURAL range <>) of STD_LOGIC_VECTOR(15 downto 0);\n');
 fprintf(s,'constant rom: rom_array := (');
 for i=0:muestras
-    fprintf(s,'%s','D');
-    fprintf(s,'%d',i);
-    fprintf(s,',');
+    fprintf(s3,'D%d',i);
+    if i < muestras
+        fprintf(s3,',');
+    end
     if((i==32)||(i==32*2)||(i==32*3)||(i==32*4)||(i==32*4)||(i==32*5)||(i==32*6)||(i==32*7)||(i==32*8)||(i==32*9)||(i==32*10)||(i==32*11)||(i==32*12)) 
     fprintf(s,'\n');    
     end    
@@ -88,7 +89,7 @@ s2 = fopen('SawToothWave.vhd','w+'); %opens the output file
         fprintf(s2,'\n');
         fprintf(s2,'\n');
 for i=0:muestras
-    if i<muestras/2
+    if i < muestras/2 + 1
         numero=dec2hex(round(1.41*i),2);
         plot(i,1.41*i,'g');
         hold on;
@@ -117,9 +118,10 @@ end
 fprintf(s2,'type rom_array is array (NATURAL range <>) of STD_LOGIC_VECTOR(15 downto 0);\n');
 fprintf(s2,'constant rom: rom_array := (');
 for i=0:muestras
-    fprintf(s2,'%s','D');
-    fprintf(s2,'%d',i);
-    fprintf(s2,',');
+    fprintf(s3,'D%d',i);
+    if i < muestras
+        fprintf(s3,',');
+    end
     if((i==32)||(i==32*2)||(i==32*3)||(i==32*4)||(i==32*4)||(i==32*5)||(i==32*6)||(i==32*7)||(i==32*8)||(i==32*9)||(i==32*10)||(i==32*11)||(i==32*12)) 
     fprintf(s2,'\n');    
     end    
@@ -169,7 +171,7 @@ fprintf(s3,'architecture Behavioral of TriangleWave is\n');
  fprintf(s3,'\n');
  fprintf(s3,'\n');
 for i=0:muestras
-    if i < muestras/4
+    if i < muestras/4 + 1
         numero=dec2hex(128+round(1.41*i),2);
         plot(i,128+round(1.41*i));
         hold on;
@@ -181,7 +183,7 @@ for i=0:muestras
         fprintf(s2,'%s',numero);
         fprintf(s2,'";');
         fprintf(s2,'\n');
-    elseif i < 3*muestras/4
+    elseif i < 3*muestras/4 + 1
         numero=dec2hex(383-round(1.41*i),2);
         plot(i,383-round(1.41*i));
         hold on;
@@ -210,12 +212,9 @@ end
 fprintf(s3,'type rom_array is array (NATURAL range <>) of STD_LOGIC_VECTOR(15 downto 0);\n');
 fprintf(s3,'constant rom: rom_array := (');
 for i=0:muestras
-    fprintf(s3,'%s','D');
-    fprintf(s3,'%d',i);
-    if i<muestras
+    fprintf(s3,'D%d',i);
+    if i < muestras
         fprintf(s3,',');
-    else
-        fprintf(s3);
     end
     if((i==32)||(i==32*2)||(i==32*3)||(i==32*4)||(i==32*4)||(i==32*5)||(i==32*6)||(i==32*7)||(i==32*8)||(i==32*9)||(i==32*10)||(i==32*11)||(i==32*12)) 
     fprintf(s3,'\n');    
