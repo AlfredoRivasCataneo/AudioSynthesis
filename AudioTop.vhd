@@ -5,7 +5,8 @@ use IEEE.STD_LOGIC_arith.ALL;
 
 entity AudioTop is 
 						port(clk50mhz:  in std_logic;									--the master clock of the board
-								    btn:  in  std_logic_vector(3 downto 0);   	--we can use the buttons for something
+								   -- btn:  in  std_logic_vector(3 downto 0);   	--we can use the buttons for something
+									 clr: in std_logic;	
 								--	 sw:   in  std_logic_vector(7 downto 0); 		-- also the sw
 									 ps2c: in  std_logic;								--the ps2 clock
 									 ps2d: in  std_logic;								--data form the ps2 we need to filter both
@@ -47,18 +48,18 @@ component ps2Controller port (
 --    pwm: out std_logic);end component;
 ----signals
 signal clk2: std_logic;
-signal pushbutton: std_logic_vector(3 downto 0);
-signal clr: std_logic;
+--signal pushbutton: std_logic_vector(3 downto 0);
+--signal clr: std_logic;
 signal key1, key2,key3: std_logic_vector(7 downto 0);
 signal displays: std_logic_vector(15 downto 0);
 begin
 
 displays <= key1 & key2;
 led<= key3;
-clr<=btn(0);
+--clr<=btn(0);
 ClkDivBy2: Clk25MHz port map (clk50Mhz,clr,clk2);
 KeyBrd: ps2Controller port map (clk2,clr,ps2c,ps2d,key1,key2,key3);
-btns: DebouncePB port map(btn,clk50MHz,clr,pushbutton);
+--btns: DebouncePB port map(btn,clk50MHz,clr,pushbutton);
 Display: DisplayController port map(clk50MHz,clr,displays,seg,an);
 --PWM: PWM16Bits port map(clr,clk50MHz,audioOut);
 
