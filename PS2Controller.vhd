@@ -19,10 +19,10 @@ architecture Behavioral of PS2Controller is
 type state_type is (start, wtclklo1, wtclkhi1, getkey1, wtclklo2,wtclkhi2, getkey2, breakey, wtclklo3, wtclkhi3, getkey3);
 signal state: state_type;
 signal PS2Cf, PS2Df: std_logic;
-signal ps2c_filter, ps2d_filter: std_logic_vector(7 downto 0);
-signal shift1, shift2, shift3: std_logic_vector(10 downto 0);
-signal keyval1s, keyval2s, keyval3s: std_logic_vector(7 downto 0);
-signal bit_count: std_logic_vector(3 downto 0);
+signal ps2c_filter, ps2d_filter: std_logic_vector(7 downto 0):= (others =>'0');
+signal shift1, shift2, shift3: std_logic_vector(10 downto 0):= (others =>'0');
+signal keyval1s, keyval2s, keyval3s: std_logic_vector(7 downto 0):= (others =>'0');
+signal bit_count: std_logic_vector(3 downto 0):= (others =>'0');
 constant bit_count_max: std_logic_vector(3 downto 0) := "1011";--11
 begin
 		fitro: process(clk25,clr)
@@ -37,18 +37,18 @@ begin
 						ps2c_filter(6 downto 0) <= ps2c_filter(7 downto 1);
 						ps2d_filter(7) <= ps2d;
 						ps2d_filter(6 downto 0) <= ps2d_filter(7 downto 1);
-				if ps2c_filter = x"FF" then
-						ps2cf <= '1';
-				elsif ps2c_filter = x"00" then		
-						ps2cf <= '0';
+						if ps2c_filter = x"FF" then
+								ps2cf <= '1';
+						else 
+								ps2cf <= '0';
+						end if;
+						if ps2d_filter = x"FF" then		
+								ps2df <= '1';
+						else 
+								ps2df <= '0';
+						end if;		
 				end if;
-				if ps2d_filter = x"FF" then		
-						ps2df <= '1';
-				elsif ps2d_filter = x"00" then		
-						ps2df <= '0';
-				end if;		
-		end if;
-		end process;		
+			end process;		
 		--maquina de estados para leer el teclado
 		skey: process(clk25, clr)
 		begin
